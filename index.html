@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <head>
+        <meta charset="UTF-8">
         <title>Jozese</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <style>
 
-        
+        html{
+            background-color: 	black;
+            background-image:   url("bg.gif");
+        }
+
+
         @font-face {
-            font-family: 'windows';
-            src:  url('fonts/windows.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
+            font-family: 'Free Pixel';
+            src: url("fonts/Pixel_NES.woff") format("truetype");
         }
 
         body {
@@ -19,6 +23,8 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            color: white;
+            font-family: 'Free Pixel';
         } 
         
         h1 {
@@ -29,20 +35,37 @@
             display: block; 
             max-width: 100%; 
         }
+        a {
+            color: #fff;
+            text-decoration: none; 
+        }
+       
 
         .container {
-            font-family: 'windows';
+            color: w;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 80vh; 
+            font-weight: bold;
+            animation: flicker 1s infinite alternate;
         }
+
+    
         
         .text-container{
             display: flex;
             flex-direction: row;
         }
+        @keyframes flicker {
+            from {
+                text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 0 0 20px rgba(173, 216, 230, 0.8), 0 0 30px rgba(173, 216, 230, 0.8);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(173, 216, 230, 1.2), 0 0 30px rgba(173, 216, 230, 1.2), 0 0 60px rgba(173, 216, 230, 1.2);
+            }
+            }
         p {display: table-cell; vertical-align: middle; text-align: center}
         </style>
         <script>
@@ -67,7 +90,6 @@
             </font>
             <br>
             <br>
-            <img src="https://i.pinimg.com/originals/9d/9b/d1/9d9bd13afce1a798d22ecfd9897730ed.gif" style="width: 400px;">
             <br>
             <br>
             <i>
@@ -76,9 +98,9 @@
             <br>
             <div class="text-container">
                 <nav>
-                    <a href="https://en.wikipedia.org/wiki/Software_engineering">about</a> //
-                    <a href="https://github.com/Jozese">github</a> //
-                    <a href="#">resume</a> //
+                    <a href="https://en.wikipedia.org/wiki/Software_engineering">about</a> ·
+                    <a href="https://github.com/Jozese">github</a> ·           
+                    <a href="#">resume</a> ·          
                     <a href="https://jozese.dev/contact.html">contact</a>
                 </nav>
             </div> 
