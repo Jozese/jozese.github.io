@@ -71,10 +71,10 @@
         <script>
             function updateTime() {
                 const now = new Date();
-                const options = { timeZone: 'Europe/Paris', hour12: true }; 
+                const options = { timeZone: 'Europe/Madrid', hour12: true }; 
                 const timeString = now.toLocaleTimeString('en-US', options);
             
-                document.getElementById('clock').textContent = "CENTRAL EUROPEAN SUMMER TIME - " + timeString;
+                document.getElementById('clock').textContent = "CENTRAL EUROPEAN TIME - " + timeString;
             }
         
              setInterval(updateTime, 100);
